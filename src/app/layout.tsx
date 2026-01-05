@@ -16,7 +16,12 @@ const robotoMono = Roboto_Mono({
 export const metadata: Metadata = {
   title: "Cortex - Premium Automotive Care",
   description: "Excellence in automotive care. Professional diagnostics, repairs, and detailing.",
+  icons: {
+    icon: '/icon.svg',
+  },
 };
+
+import { Footer } from "@/components/layout/Footer";
 
 export default function RootLayout({
   children,
@@ -30,9 +35,7 @@ export default function RootLayout({
       >
         <Navbar />
         <main className="flex-grow">{children}</main>
-        <footer className="py-6 text-center text-zinc-600 text-xs border-t border-white/5">
-          © {new Date().getFullYear()} Cortex. All rights reserved.
-        </footer>
+        <Footer />
       </body>
     </html>
   );

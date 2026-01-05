@@ -1,15 +1,19 @@
 import { Hero } from "@/components/sections/Hero";
 import { Services } from "@/components/sections/Services";
-import { Contact } from "@/components/sections/Contact";
+import { HowItWorks } from "@/components/sections/HowItWorks";
+import { Brands } from "@/components/sections/Brands";
 import { WhyUs } from "@/components/sections/WhyUs";
+import { Contact } from "@/components/sections/Contact";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-0">
+    <>
       <Hero />
-      <WhyUs />
       <Services />
+      <HowItWorks />
+      <WhyUs />
+      <Brands />
       <Contact />
-    </div>
+    </>
   );
 }

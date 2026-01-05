@@ -37,15 +37,27 @@ export function Contact() {
                                 </h3>
                                 <p className="text-zinc-400 text-sm mb-4">1530 Drew Rd, Mississauga, ON L5S 1W8</p>
                                 {/* Google Maps Embed */}
-                                <div className="w-full h-48 rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+                                <div className="w-full h-48 rounded-2xl overflow-hidden border border-white/10 bg-white/5 relative group">
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.6666687458!2d-79.67000000000002!3d43.70000000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3dc7a0000001%3A0x0!2zMTVzMCBEcmV3IFJkLCBNaXNzaXNhdWdhLCBPTiBMJVMgMVc4!5e0!3m2!1sen!2sca!4v1600000000000!5m2!1sen!2sca"
                                         width="100%"
                                         height="100%"
-                                        style={{ border: 0, filter: "invert(90%) hue-rotate(180deg)" }}
+                                        style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) grayscale(80%)" }}
                                         allowFullScreen
                                         loading="lazy"
                                         referrerPolicy="no-referrer-when-downgrade"
+                                    />
+                                    {/* White Pin Overlay */}
+                                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-full mt-[10px] pointer-events-none drop-shadow-2xl">
+                                        <MapPin size={48} className="text-white fill-black animate-bounce" />
+                                        <div className="w-4 h-1 bg-black/50 blur-[2px] rounded-full mx-auto mt-[-5px]" />
+                                    </div>
+                                    <a
+                                        href="https://maps.google.com/?q=1530+Drew+Rd,+Mississauga,+ON"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="absolute inset-0 z-10"
+                                        aria-label="Open in Google Maps"
                                     />
                                 </div>
                             </div>
