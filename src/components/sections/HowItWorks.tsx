@@ -29,7 +29,7 @@ const steps = [
 export function HowItWorks() {
     return (
         <section className="py-20 bg-zinc-950 text-white border-t border-white/5">
-            <div className="container px-6">
+            <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}

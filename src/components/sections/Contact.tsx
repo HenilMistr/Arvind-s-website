@@ -6,7 +6,7 @@ import { Phone, MapPin, Clock } from "lucide-react";
 export function Contact() {
     return (
         <section id="book" className="py-20 relative bg-zinc-950 border-t border-white/5 text-white">
-            <div className="container px-6">
+            <div className="container mx-auto px-6">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
 
                     {/* Left Column: Brand & Info */}

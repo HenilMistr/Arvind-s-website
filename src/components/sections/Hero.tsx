@@ -23,7 +23,7 @@ export function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-background/90" />
             </div>
 
-            <div className="container px-6 relative z-10 text-center flex flex-col items-center">
+            <div className="container mx-auto px-6 relative z-10 text-center flex flex-col items-center">
                 <motion.h1
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}

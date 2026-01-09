@@ -67,17 +67,17 @@ export function Navbar() {
                     : "bg-transparent py-4"
             )}
         >
-            <div className="container px-6 flex items-center justify-between h-16 relative">
+            <div className="container mx-auto px-6 flex items-center justify-between h-16 relative">
                 {/* Logo - Left */}
-                <Link href="/" className="flex items-center gap-2 z-50">
-                    <div className="relative w-8 h-8 rounded-full overflow-hidden">
+                <Link href="/" className="flex items-center gap-3 z-50">
+                    <div className="relative w-10 h-10 rounded-full overflow-hidden">
                         <img
                             src="/images/logo.jpg"
                             alt="Cortex Logo"
                             className="w-full h-full object-cover filter invert mix-blend-screen"
                         />
                     </div>
-                    <span className="font-bold text-lg tracking-tight text-white">Cortex</span>
+                    <span className="font-bold text-2xl tracking-tight text-white">Cortex</span>
                 </Link>
 
                 {/* Nav Links - Absolute Center */}

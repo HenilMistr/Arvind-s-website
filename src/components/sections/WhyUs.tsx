@@ -30,7 +30,7 @@ const features = [
 export function WhyUs() {
     return (
         <section id="about" className="py-24 bg-zinc-950 text-white overflow-hidden">
-            <div className="container px-6">
+            <div className="container mx-auto px-6">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     {/* Left: Content & Grid */}
                     <div>
